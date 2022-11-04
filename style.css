@@ -22,7 +22,6 @@ body {
   padding-right: 2%;
 }
 
-
 .tittleContents {
   display: flex;
   flex-direction: column;
@@ -86,13 +85,13 @@ body {
   right: 25%;
   top: 37.5%;
   bottom: 37.5%;
-  border: 2px solid #ffffff;
+  border: 2px solid #fff;
   display: flex;
   align-items: flex-start;
   padding: 8px;
 }
 
-.myRecentWorks{
+.myRecentWorks {
   background-color: #ebf0ee;
   border-radius: 4px;
   padding: 8px;
@@ -139,8 +138,6 @@ body {
   font-weight: 500;
   line-height: 24px;
   color: white;
-  left: calc(50% - 122px/2 + 0.5px);
-  bottom: 8px;
   bottom: 8px;
   padding: 12px;
   display: flex;
@@ -160,7 +157,7 @@ body {
   box-sizing: border-box;
   width: 75%;
   margin: 2em auto;
-  display: grid;  
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   justify-content: center;
   align-content: space-around;
@@ -177,11 +174,11 @@ body {
   height: 474px;
 }
 
-.aboutMeListItem{
+.aboutMeListItem {
   display: flex;
   flex-direction: row;
-  background-color: #ffffff;
-  color: #36B37E;
+  background-color: #fff;
+  color: #36b37e;
   border-radius: 4px;
   text-align: center;
   font-family: 'Inter', sans-serif;
@@ -194,7 +191,7 @@ body {
 }
 
 .aboutMeListItem li {
-  color: #36B37E;
+  color: #36b37e;
 }
 
 .informationCard {
@@ -216,6 +213,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 8px;
 }
 
 .middle {
@@ -224,10 +222,10 @@ body {
 }
 
 .img1-aboutme {
-  background-image: url("imges/aboutme-img1.png") ;
+  background-image: url("imges/aboutme-img1.png");
   padding: 2em;
   background-repeat: no-repeat;
-  background-position:center right;
+  background-position: center right;
 }
 
 .about-me h2 {
@@ -242,10 +240,10 @@ body {
 }
 
 .img2-aboutme {
-  background-image: url("imges/aboutme-img2.png") ;
+  background-image: url("imges/aboutme-img2.png");
   padding: 2em;
   background-repeat: no-repeat;
-  background-position:center left;
+  background-position: center left;
 }
 
 #about-me p {
@@ -303,18 +301,17 @@ ul.tags-kill {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  padding: 0px 2px;
+  padding: 0 2px;
   width: 327px;
-  left: calc(50% - 327px/2);
   top: 16px;
 }
 
-.btn-cv:hover {text-decoration: none;
+.btn-cv:hover {
+  text-decoration: none;
   font-size: small;
   font-weight: bold;
   color: #36b37e;
   padding: 3px;
-  background: #fff;
   border-radius: 4px;
   cursor: pointer;
   background: #3ec48c;
@@ -331,7 +328,7 @@ ul.tags-kill {
   background: #01a566;
 }
 
-li {
+.li {
   list-style: none;
   margin-right: 1em;
 }
@@ -352,8 +349,4 @@ ul.tags-skill {
 
 .tags-skill {
   margin: 2em 0;
-}
-
-#about-me {
-  position: relative;
 }
