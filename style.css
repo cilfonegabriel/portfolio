@@ -100,6 +100,8 @@ body {
   font-weight: 600;
   font-size: 12px;
   line-height: 16px;
+  float: left;
+  margin: 0.5rem;
 }
 
 .myRecentWork {
@@ -140,9 +142,7 @@ body {
   color: white;
   bottom: 8px;
   padding: 12px;
-  display: flex;
   flex-direction: row;
-  align-items: center;
 }
 
 .theButton:hover {
@@ -200,10 +200,6 @@ body {
   border-radius: 10px;
   background-color: white;
   padding: 16px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family: "inter", sans-serif;
   color: #3a4a42;
   float: left;
@@ -212,10 +208,7 @@ body {
 .informationCard ul {
   list-style: none;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 8px;
+  margin: 2rem;
 }
 
 .middle {
