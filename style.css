@@ -175,8 +175,8 @@ body {
 }
 
 .aboutMeListItem {
-  display: flex;
-  flex-direction: row;
+  /* display: flex;
+  flex-direction: row; */
   background-color: #fff;
   color: #36b37e;
   border-radius: 4px;
@@ -188,6 +188,7 @@ body {
   max-height: 50%;
   padding: 8px 12px;
   letter-spacing: 0.03em;
+  float:
 }
 
 .aboutMeListItem li {
@@ -205,6 +206,7 @@ body {
   align-items: center;
   font-family: "inter", sans-serif;
   color: #3a4a42;
+  float: left;
 }
 
 .informationCard ul {
@@ -334,13 +336,13 @@ ul.tags-kill {
 }
 
 .skills-row-flex {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  position: relative;
+  position: relative; */
 }
 
 ul.tags-skill {
@@ -349,4 +351,8 @@ ul.tags-skill {
 
 .tags-skill {
   margin: 2em 0;
+}
+
+.section-contact {
+
 }
