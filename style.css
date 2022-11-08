@@ -146,7 +146,6 @@ body {
   cursor: pointer;
   width: fit-content;
   background-color: #36b37e;
-
 }
 
 .theButton:hover {
@@ -367,7 +366,6 @@ ul.tags-skill {
   font-weight: bold;
   padding: 1em 1em;
   width: 327px;
-
 }
 
 form {
@@ -389,7 +387,7 @@ textarea {
   width: 80%;
   outline: none;
   border: 1px solid #d0d9d4;
-  font-family: 'Inter';
+  font-family: "inter", sans-serif;
 }
 
 form input:focus,
