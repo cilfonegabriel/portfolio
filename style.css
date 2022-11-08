@@ -351,3 +351,40 @@ ul.tags-skill {
   margin: 2em 0;
 }
 
+#section-contact {
+  display: flex;
+  flex-direction: column;
+  margin: 2rem;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+}
+
+#form input, textarea {
+  padding: 1rem;
+  border: 1px solid #d0d9d4;
+  font-family: 'Inter';
+}
+
+#form input {
+  order: 0;
+}
+
+#email {
+  margin: 1rem 0;
+}
+
+#message {
+  order: 1;
+}
+
+#form button {
+  order: 2;
+}
+
+#about-me button {
+  display: block;
+  margin: 1em auto;
+}
