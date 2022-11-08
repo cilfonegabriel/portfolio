@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Inter:wght@100;200;300;400;500;700;800;900&display=swap');
+
 body {
   height: 100vh;
   background-color: rgb(255, 255, 255);
@@ -362,7 +364,8 @@ ul.tags-skill {
   flex-direction: column;
 }
 
-#form input, textarea {
+#form input,
+textarea {
   padding: 1rem;
   border: 1px solid #d0d9d4;
   font-family: 'Inter';
@@ -382,9 +385,4 @@ ul.tags-skill {
 
 #form button {
   order: 2;
-}
-
-#about-me button {
-  display: block;
-  margin: 1em auto;
 }
