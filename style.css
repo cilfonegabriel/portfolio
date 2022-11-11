@@ -674,7 +674,7 @@ div {
     padding: 0 5em;
     margin: 0;
   }
-  
+
   .img2-aboutme {
     grid-template-columns: repeat(3, 1fr);
   }
