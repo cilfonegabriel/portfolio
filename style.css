@@ -6,17 +6,18 @@ body {
 }
 
 .color-blue {
-    font-family: 'Inter';
-    font-size: 2.5rem;
-    color: #172b4d;
-    font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 2.5rem;
+  color: #172b4d;
+  font-weight: 700;
 }
 
 .light-green {
   color: #36b37e;
 }
 
-h1, h2 {
+h1,
+h2 {
   font-size: xx-large;
 }
 
@@ -32,7 +33,7 @@ h1, h2 {
   display: none;
 }
 
-.container { 
+.container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -72,7 +73,6 @@ h1, h2 {
   color: #67798e;
 }
 
-/* Desktop version*/
 .only-desktop {
   display: none;
 }
@@ -161,7 +161,7 @@ ul.socialContents {
 
 .theButton:focus {
   cursor: pointer;
-  background: #01a566
+  background: #01a566;
 }
 
 .button:hover {
@@ -191,7 +191,12 @@ ul.socialContents {
 
 .primary > h1 {
   font-size: 275%;
-} 
+}
+
+li {
+  list-style: none;
+  margin-right: 1em;
+}
 
 .aboutMeListItem {
   display: flex;
@@ -253,6 +258,7 @@ ul.socialContents {
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .img1-aboutme {
   background-image: url("imges/aboutme-img1.png");
   padding: 2em;
@@ -364,14 +370,9 @@ ul.tags-kill {
   background: #01a566;
 }
 
-li {
-  list-style: none;
-  margin-right: 1em;
-}
-
 .tags-title h3 {
   text-align: center;
-  font-size: x-large; 
+  font-size: x-large;
 }
 
 .tags-title a {
@@ -404,11 +405,9 @@ ul.tags-skill {
   margin: 2em 0;
 }
 
-
 .tags-skill > li {
   margin-top: 1em;
 }
-
 
 .section-contact {
   display: flex;
@@ -424,7 +423,7 @@ ul.tags-skill {
 }
 
 form {
-  margin: 0;
+  margin: 10% 5% 5% 5%;
   padding: 0px;
   width: 100%;
   max-width: 440px;
@@ -440,7 +439,7 @@ form textarea {
   width: 80%;
   outline: none;
   border: 1px solid #d0d9d4;
-  font-family: 'Inter';
+  font-family: "inter", sans-serif;
 }
 
 form input:focus,
@@ -453,10 +452,6 @@ form textarea:focus {
   margin: 0 auto;
 }
 
-form input:focus,
-form textarea:focus {
-  border: 1px solid #d0d9d4;
-}
 
 .button-form {
   border: 0;
@@ -519,14 +514,9 @@ div {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color: #42526E;
+  color:  #42526e;
   margin-top: 1em;
   margin-bottom: 3em;
-}
-
-.end-portfolio {
-  margin-top: 5em;
-  margin-bottom: 1em;
 }
 
 #textarea {
@@ -535,7 +525,6 @@ div {
   background-position: left 325px, 200px 385px, right 280px;
   background-size: 130px;
 }
-
 /*style mobile-menu*/
 #mobile-menu {
   height: 85vh;
@@ -575,9 +564,7 @@ div {
   *::after {
     box-sizing: inherit;
   }
-
  /*Hide welcome and button menu*/
- 
   header > a,
   header > img {
     display: none;
@@ -590,7 +577,7 @@ div {
   #headline {
     background-image: url("./imges/Desktop/Header-llustration.png");
     background-size: 106% 16%;
-    padding: 1em 10em;;
+    padding: 1em 10em;
   }
 
   .my-placeholder {
@@ -684,6 +671,10 @@ div {
     padding: 0;
   }
 
+  .supporting-text >p {
+    font-size: 150%;
+  }
+
   #about-me > p {
     text-align: center;
     padding: 0 5em;
@@ -702,10 +693,6 @@ div {
   }
 
   /*description side by side with the form*/
-  .supporting-text >p {
-    font-size: 150%;
-  }
-
   .disabled-btn {
     padding-top: 2em;
     padding-bottom: 7em;
@@ -741,16 +728,16 @@ div {
   }
 
   #section-contact {
-    background-image: 
+    background-image:
       url("./imges/Desktop/contact-form-illustration1.png"),
       url("./imges/Desktop/contact-form-illustration2.png"),
       url("./imges/Desktop/contact-form-illustration1.png");
     background-repeat: no-repeat;
-    background-position: left 325px, 200px 385px, right 280px;  
+    background-position: left 325px, 200px 385px, right 280px;
     background-size: 130px;
   }
 
-  .project-placeholder img:hover {
+  .project-placeholder:hover {
     transform: scale(1.05);
   }
 
