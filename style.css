@@ -186,7 +186,8 @@ ul.socialContents {
   display: flex;
   flex-direction: column-reverse;
   align-items: flex-end;
-  height: 474px;
+  height: 424px;
+  width: 218px;
 }
 
 .primary > h1 {
@@ -199,33 +200,25 @@ li {
 }
 
 .aboutMeListItem {
-  display: flex;
-  flex-direction: row;
-  background-color: #fff;
+  background-color: white;
   color: #36b37e;
   border-radius: 4px;
+  padding: 8px 12px;
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
-  font-size: 12px;
+  font-size: 0.75rem;
   line-height: 16px;
-  max-height: 50%;
-  padding: 8px 12px;
-  letter-spacing: 0.03em;
-}
-
-.aboutMeListItem li {
-  color: #36b37e;
 }
 
 .informationCard {
   border-radius: 10px;
   background-color: white;
-  max-height: 50%;
+  max-height: 71%;
   padding: 16px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   font-family: "inter", sans-serif;
   color: #3a4a42;
@@ -237,8 +230,8 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 8px;
   flex-wrap: wrap;
+  gap: 1em;
 }
 
 .middle {
@@ -247,23 +240,24 @@ li {
 }
 
 .about-me {
-  display: grid;
-  grid-template-columns: 3;
-  grid-template-rows: auto;
-  gap: 24px;
-  justify-items: center;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  padding-bottom: 15px;
+  color: #172b4d;
+  font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   background-image: url("images/illustration-\ about\ me-\ mobile.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
 }
 
 .img1-aboutme {
-  background-image: url("imges/aboutme-img1.png");
-  padding: 2em;
-  background-repeat: no-repeat;
-  background-position: center right;
+  position: absolute;
+  right: 0;
+}
+
+.img1-aboutme:hover {
+  transform: translate(-2.1rem, -2ex);
 }
 
 .about-me h2 {
@@ -278,30 +272,31 @@ li {
 }
 
 .img2-aboutme {
-  background-image: url("imges/aboutme-img2.png");
-  padding: 2em;
-  background-repeat: no-repeat;
-  background-position: center left;
+  display: grid;
+  gap: 24px;
 }
 
-#about-me p {
+.about-me p {
+  margin: 0% 5% 5% 5%;
   text-align: center;
-  margin: 1em;
-  font-size: x-large;
+  line-height: 32px;
+  font-size: 1.25rem;
 }
 
 .btn-cv {
-  border: 0;
-  padding: 12px;
-  width: fit-content;
-  width: -moz-fit-content;
+  background-color: #36b37e;
+  size: 17px;
+  width: 159px;
   height: 48px;
-  background: #36b37f;
-  color: #fff;
-  font-size: large;
-  cursor: pointer;
+  border: none;
   border-radius: 4px;
-  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-size: 1.06rem;
+  font-weight: 500;
+  line-height: 24px;
+  color: white;
+  text-align: center;
 }
 
 .properties {
@@ -333,8 +328,14 @@ ul.tags-kill {
   padding: 0;
 }
 
+.skills-card {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
 .my-placeholder {
-  grid-template-columns: repeat(3, 1fr);
   padding-bottom: 11px;
   margin-bottom: 5%;
   border: solid 1px #d0d9d4;
@@ -345,20 +346,23 @@ ul.tags-kill {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 100%;
+  height: 327px;
+  width: 325px;
+}
+
+.my-placeholder ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
 }
 
 .btn-cv:hover {
-  text-decoration: none;
-  font-size: small;
-  font-weight: bold;
-  color: #36b37e;
-  padding: 3px;
-  border-radius: 4px;
-  cursor: pointer;
-  background: #3ec48c;
-  box-shadow: 1px 8px 16px rgba(54, 179, 127, 0.24);
-  transition: 0.75s;
+  transform: scale(1.3);
 }
 
 #about-me {
@@ -368,6 +372,13 @@ ul.tags-kill {
 .btn-cv:focus {
   cursor: pointer;
   background: #01a566;
+}
+
+.postOne {
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
 }
 
 .tags-title h3 {
@@ -416,11 +427,6 @@ ul.tags-skill {
   justify-content: space-between;
 }
 
-#section-contact h2 {
-  text-align: center;
-  font-weight: bold;
-  padding: 2em 1em;
-}
 
 form {
   margin: 10% 5% 5% 5%;
@@ -551,16 +557,14 @@ div {
   display: none;
 }
 
-@media only screen and (min-width: 768px) {
+.social-media-icons li:hover {
+  transform: scale(1.3);
+}
+
+@media (min-width: 768px) {
   /* Standard CSS rules */
   html {
     box-sizing: border-box;
-  }
-
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
   }
 
   header > a,
@@ -575,23 +579,12 @@ div {
   #headline {
     background-image: url("./imges/Desktop/Header-llustration.png");
     background-size: 106% 16%;
-    padding: 1em 10em;
   }
 
   .my-placeholder {
     grid-template-columns: repeat(3, 1fr);
-    padding-bottom: 11px;
-    margin-bottom: 5%;
-    border: solid 1px #d0d9d4;
-    background-color: #ebf0ee;
-    border-radius: 10px 10px 10px 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
+    height: 372px;
+    width: 229px;
   }
 
   nav {
@@ -655,7 +648,7 @@ div {
     height: 100%;
     width: 100%;
   }
-  
+
   .img1-aboutme {
     background-image: url("./imges/Desktop/about-me-illustration1.png");
     background-size: 100px;
@@ -670,6 +663,12 @@ div {
     font-size: 150%;
   }
 
+  .skills-card {
+    margin: 22px;
+    display: grid;
+    gap: 24px;
+    justify-items: center;
+  }
   #about-me > p {
     text-align: center;
     padding: 0 5em;
@@ -677,8 +676,7 @@ div {
   }
 
   .img2-aboutme {
-    background-image: url("./imges/Desktop/about-me-illustration2.png");
-    background-size: 20%;
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .mobile-only {
@@ -691,19 +689,13 @@ div {
   }
 
   .section-contact {
-    display: block;
-    padding-top: 2em;
+    display: flex;
+    flex-direction: row;
   }
 
   .section-contact h2 {
-    float: left;
     width: 40%;
     text-align: left;
-  }
-
-  form {
-    float: left;
-    margin-right: 1em;
   }
 
   form input,
