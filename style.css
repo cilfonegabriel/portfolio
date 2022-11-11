@@ -551,7 +551,8 @@ div {
   display: none;
 }
 
-@media only screen and (min-width:768px) {
+@media only screen and (min-width: 768px) {
+  /* Standard CSS rules */
   html {
     box-sizing: border-box;
   }
@@ -592,7 +593,7 @@ div {
     height: 100%;
     width: 100%;
   }
-  
+
   nav {
     margin-top: -1em;
   }
@@ -654,13 +655,13 @@ div {
     height: 100%;
     width: 100%;
   }
- 
+  
   .img1-aboutme {
     background-image: url("./imges/Desktop/about-me-illustration1.png");
     background-size: 100px;
     background-position-y: -15px;
   }
-  
+
   .img1-aboutme + h2 {
     padding: 0;
   }
