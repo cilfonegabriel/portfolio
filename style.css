@@ -427,7 +427,6 @@ ul.tags-skill {
   justify-content: space-between;
 }
 
-
 form {
   margin: 10% 5% 5% 5%;
   width: 100%;
@@ -669,6 +668,7 @@ div {
     gap: 24px;
     justify-items: center;
   }
+  
   #about-me > p {
     text-align: center;
     padding: 0 5em;
