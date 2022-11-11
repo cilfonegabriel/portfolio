@@ -424,7 +424,6 @@ ul.tags-skill {
 
 form {
   margin: 10% 5% 5% 5%;
-  padding: 0px;
   width: 100%;
   max-width: 440px;
   float: left;
@@ -451,7 +450,6 @@ form textarea:focus {
   display: block;
   margin: 0 auto;
 }
-
 
 .button-form {
   border: 0;
@@ -514,7 +512,7 @@ div {
   font-size: 20px;
   line-height: 32px;
   text-align: center;
-  color:  #42526e;
+  color: #42526e;
   margin-top: 1em;
   margin-bottom: 3em;
 }
@@ -525,7 +523,9 @@ div {
   background-position: left 325px, 200px 385px, right 280px;
   background-size: 130px;
 }
+
 /*style mobile-menu*/
+
 #mobile-menu {
   height: 85vh;
   border-bottom-right-radius: 2em;
@@ -554,17 +554,19 @@ div {
 }
 
 /*Media queries for desktop*/
+
 @media only screen and (min-width:768px) {
   html {
     box-sizing: border-box;
   }
-  
+
   *,
   *::before,
   *::after {
     box-sizing: inherit;
   }
- /*Hide welcome and button menu*/
+
+  /*Hide welcome and button menu*/
   header > a,
   header > img {
     display: none;
@@ -581,19 +583,19 @@ div {
   }
 
   .my-placeholder {
-      grid-template-columns: repeat(3, 1fr);
-      padding-bottom: 11px;
-      margin-bottom: 5%;
-      border: solid 1px #d0d9d4;
-      background-color: #ebf0ee;
-      border-radius: 10px 10px 10px 10px;
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100%;
-      width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+    padding-bottom: 11px;
+    margin-bottom: 5%;
+    border: solid 1px #d0d9d4;
+    background-color: #ebf0ee;
+    border-radius: 10px 10px 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
   }
   
   nav {
@@ -615,7 +617,6 @@ div {
     color: #008552;
   }
 
-
   .only-desktop {
     display: block;
   }
@@ -635,8 +636,6 @@ div {
   .img1-aboutme > p {
     font-size: 150px;
   }
-
-  /*container grid for the works seccion*/
 
   .grid {
     width: 95%;
@@ -671,7 +670,7 @@ div {
     padding: 0;
   }
 
-  .supporting-text >p {
+  .supporting-text > p {
     font-size: 150%;
   }
 
@@ -686,13 +685,10 @@ div {
     background-size: 20%;
   }
 
-  /*delete elements that not have to be the desktop version*/
-
   .mobile-only {
     display: none;
   }
 
-  /*description side by side with the form*/
   .disabled-btn {
     padding-top: 2em;
     padding-bottom: 7em;
@@ -713,6 +709,7 @@ div {
     float: left;
     margin-right: 1em;
   }
+  
   form input,
   form textarea {
     width: 100%;
