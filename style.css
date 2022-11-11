@@ -524,8 +524,6 @@ div {
   background-size: 130px;
 }
 
-/*style mobile-menu*/
-
 #mobile-menu {
   height: 85vh;
   border-bottom-right-radius: 2em;
@@ -553,8 +551,6 @@ div {
   display: none;
 }
 
-/*Media queries for desktop*/
-
 @media only screen and (min-width:768px) {
   html {
     box-sizing: border-box;
@@ -566,7 +562,6 @@ div {
     box-sizing: inherit;
   }
 
-  /*Hide welcome and button menu*/
   header > a,
   header > img {
     display: none;
@@ -665,7 +660,7 @@ div {
     background-size: 100px;
     background-position-y: -15px;
   }
-
+  
   .img1-aboutme + h2 {
     padding: 0;
   }
@@ -709,7 +704,7 @@ div {
     float: left;
     margin-right: 1em;
   }
-  
+
   form input,
   form textarea {
     width: 100%;
