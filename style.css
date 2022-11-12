@@ -6,14 +6,19 @@ body {
 }
 
 .color-blue {
+  color: #172b4d;
   font-family: "Inter", sans-serif;
   font-size: 2.5rem;
-  color: #172b4d;
+  text-align: center;
   font-weight: 700;
+  font-size: 39px;
+  line-height: 52px;
 }
 
 .light-green {
   color: #36b37e;
+  font-family: 'Inter';
+  font-weight: 400;
 }
 
 h1,
@@ -44,7 +49,16 @@ h2 {
   background-image: url("./imges/header-illsutration-mobile@2x.png");
   padding: 1.5em;
   background-repeat: no-repeat;
-  background-size: 100% 14%;
+  background-size: 2;
+  background-size: 373px 739px
+}
+
+#headline p {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    height: 164px;
+    font-size: 20px;
+    line-height: 28px;
 }
 
 .column-flex {
@@ -86,11 +100,22 @@ h2 {
 
 .supporting-text {
   padding-top: 1.5em;
+} 
+
+.tittleContents p {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 28px;
 }
 
 .supporting-text > p {
-  font-size: larger;
-  font-weight: 500;
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
 }
 
 .socialContents {
@@ -116,7 +141,7 @@ ul.socialContents {
 .myRecentWorks {
   background-color: #ebf0ee;
   border-radius: 4px;
-  padding: 8px 12px;
+  padding: 8px 10px;
   text-align: center;
   font-family: 'Inter', sans-serif;
   font-weight: 600;
@@ -132,12 +157,25 @@ ul.socialContents {
   justify-items: center;
 }
 
+.sep {
+  background-color: #36b37f;
+  width: 55px;
+  height: 6px;
+  margin: none;
+  border: none;
+  border-radius: 10px;
+}
+
 .subTitle {
-  text-align: center;
-  font-size: 1.5rem;
-  font-weight: 600;
-  font-family: "inter", sans-serif;
-  color: #3a4a42;
+    font-size: 1.5rem;
+    font-family: "inter", sans-serif;
+    width: 337px;
+    height: 26px;
+    top: 16px;
+    left: 16px;
+    font-weight: 600;
+    line-height: 32px;
+    text-align: center;
 }
 
 .theButton {
@@ -180,18 +218,24 @@ ul.socialContents {
 }
 
 .other {
+  left: 0px;
+  right: 0px;
   border: solid 1px #d0d9d4;
   background-color: #ebf0ee;
   border-radius: 10px;
   display: flex;
   flex-direction: column-reverse;
-  align-items: flex-end;
-  height: 424px;
-  width: 218px;
+  align-items: center;
+  height: 474px;
+  width: 335px;
 }
 
 .primary > h1 {
-  font-size: 275%;
+  text-align: center;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-family: 'Inter';
+  line-height: 52px;
 }
 
 li {
@@ -222,24 +266,24 @@ li {
   align-items: center;
   font-family: "inter", sans-serif;
   color: #3a4a42;
+  gap: 16px;
+  width: 297px;
 }
 
 .informationCard ul {
-  list-style: none;
-  padding: 0;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  flex-wrap: wrap;
-  gap: 1em;
+  padding: 8px 12px;
 }
 
 .middle {
   display: grid;
-  gap: 40px;
+  gap: 8px;
 }
 
 .about-me {
+  background-image: url("./imges/illustration\ 2-about\ me\ mobile.svg");
   background-repeat: no-repeat;
   background-position-y: bottom;
   padding-bottom: 15px;
@@ -248,7 +292,6 @@ li {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-image: url("images/illustration-\ about\ me-\ mobile.png");
 }
 
 .img1-aboutme {
@@ -271,16 +314,15 @@ li {
   margin: 1em auto;
 }
 
-.img2-aboutme {
-  display: grid;
-  gap: 24px;
-}
-
 .about-me p {
-  margin: 0% 5% 5% 5%;
-  text-align: center;
+  margin: 0% 5% 5% 5%; 
   line-height: 32px;
   font-size: 1.25rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
 }
 
 .btn-cv {
@@ -338,12 +380,11 @@ ul.tags-kill {
 .my-placeholder {
   padding-bottom: 11px;
   margin-bottom: 5%;
-  border: solid 1px #d0d9d4;
   background-color: #ebf0ee;
   border-radius: 10px 10px 10px 10px;
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   height: 327px;
@@ -375,10 +416,12 @@ ul.tags-kill {
 }
 
 .postOne {
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: flex-end;
+  border-radius: 8px;
+  width: 327px;
+  height: 352px;
+  box-sizing: border-box;
+  left: 0px;
+  right: 0px;
 }
 
 .tags-title h3 {
@@ -421,18 +464,25 @@ ul.tags-skill {
 }
 
 .section-contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-between;
 }
 
+.description-contact {
+  align-items: center;
+  text-align: center;
+  margin: 5% 5% 5% 5%;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  line-height: 52px;
+  color: #172b4d;
+  width: 20.4rem;
+  height: 22.6rem;
+}
+
 form {
-  margin: 10% 5% 5% 5%;
-  width: 100%;
-  max-width: 440px;
-  float: left;
-  margin-right: 1em;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10% 5% 5% 5%;
 }
 
 form input,
@@ -474,7 +524,7 @@ form textarea:focus {
   margin-bottom: 1em;
 }
 
-#form img {
+.form img {
   position: absolute;
   right: 0;
 }
@@ -497,8 +547,8 @@ form textarea:focus {
   display: flex;
   justify-content: space-evenly;
   list-style: none;
-  width: 60%;
-  padding-left: 22%;
+  width: 29%;
+  padding-left: 36%;
 }
 
 .primary,
@@ -510,7 +560,24 @@ div {
   display: block;
 }
 
-#section-contact p {
+.img2-aboutme {
+  display: grid;
+  gap: 5px;
+}
+
+#section-contact h2 {
+  padding: 0em 2em;
+  display: flex;
+  align-items: center;
+  font-family: 'Inter';
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 47px;
+  font-style: normal;
+  height: 386px;
+} 
+
+.myMail {
   font-family: "inter", sans-serif;
   font-style: normal;
   font-weight: 400;
@@ -577,13 +644,19 @@ div {
 
   #headline {
     background-image: url("./imges/Desktop/Header-llustration.png");
-    background-size: 106% 16%;
+    margin-top: 0%;
+    padding: 1em 10em;
+    background-size: 100% 100%;
   }
 
   .my-placeholder {
+    margin: 22px;
     grid-template-columns: repeat(3, 1fr);
-    height: 372px;
-    width: 229px;
+    gap: 24px;
+  }
+
+  .img2-aboutme {
+    grid-template-columns: repeat(3, 1fr);
   }
 
   nav {
@@ -618,7 +691,11 @@ div {
   }
 
   .primary > h1 {
-    font-size: 275%;
+    text-align: center;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-family: "inter", sans-serif;
+    line-height: 52px;
   }
 
   .img1-aboutme > p {
@@ -658,8 +735,16 @@ div {
     padding: 0;
   }
 
+  .supporting-text {
+    padding-top: 1.5em;
+}
+
   .supporting-text > p {
-    font-size: 150%;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
   }
 
   .skills-card {
@@ -675,10 +760,6 @@ div {
     margin: 0;
   }
 
-  .img2-aboutme {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
   .mobile-only {
     display: none;
   }
@@ -686,16 +767,6 @@ div {
   .disabled-btn {
     padding-top: 2em;
     padding-bottom: 7em;
-  }
-
-  .section-contact {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .section-contact h2 {
-    width: 40%;
-    text-align: left;
   }
 
   form input,
@@ -718,8 +789,8 @@ div {
       url("./imges/Desktop/contact-form-illustration2.png"),
       url("./imges/Desktop/contact-form-illustration1.png");
     background-repeat: no-repeat;
-    background-position: left 325px, 200px 385px, right 280px;
-    background-size: 130px;
+    background-position: left 316px, 207px 386px, right 205px;
+    background-size: 100px;
   }
 
   .project-placeholder:hover {
@@ -734,5 +805,35 @@ div {
   .contact-description:hover {
     transform: translate(1em);
     transition: 1.5s;
+  }
+
+  .section-contact {
+    display: flex;
+    align-items: flex-start;
+    padding: 14px 10px;
+    gap: 24px;
+    width: 1135px;
+    flex-direction: row;
+    top: 3144px;
+    left: 135px;
+  }
+
+  #section-contact h2 {
+    text-align: left;
+  }
+
+  .containerThirdTittleForm {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    float: left;
+    margin-right: 7em;
+    width: 893px;
+  }
+
+  .ThirdTittle{
+    align-items: center;
+    width: fit-content;
+    line-height: 3;
   }
 }

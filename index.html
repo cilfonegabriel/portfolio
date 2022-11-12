@@ -40,8 +40,7 @@
         </nav>
         <div class="primary">
           <h1 class="color-blue">
-            Hey there. I'm<br />
-            Gabriel Cilfone
+            Hey there. I'm Gabriel Cilfone
             <br />
             <span class="light-green">I'm a software developer</span>
           </h1>
@@ -59,14 +58,48 @@
             <li><a href="https://angel.co/" target='_blank' rel = "noopener noreferrer" ><img class= "icon" src= "./imges/angellist.svg" alt="angellist"></a></li>
           </ul>
         </div>
-          <img
-            src="./imges/Disabled.png"
-            alt="disabled btn to scroll down"
-           class="disabled-btn"/>
+      </section> 
+      <section>
+        <hr class="sep">
         <section class="myRecentWork">
-          <img src="./imges/Indicator.svg" alt="indicator-green"/>
           <h2 class="color-blue">My Recent Works</h2>
           <div  class="middle">
+            <section class="other">
+              <section class="informationCard">
+                <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
+                <ul>
+                  <li class="myRecentWorks">Ruby on rails</li>
+                  <li class="myRecentWorks">css</li>
+                  <li class="myRecentWorks">JavaScript</li>
+                  <li class="myRecentWorks">html</li>
+                </ul>
+                <button type="button" class="theButton">See Project</button>
+              </section>
+            </section>
+            <section class="other">
+              <section class="informationCard">
+                <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
+                <ul>
+                  <li class="myRecentWorks">Ruby on rails</li>
+                  <li class="myRecentWorks">css</li>
+                  <li class="myRecentWorks">JavaScript</li>
+                  <li class="myRecentWorks">html</li>
+                </ul>
+                <button type="button" class="theButton">See Project</button>
+              </section>
+            </section>
+            <section class="other">
+              <section class="informationCard">
+                <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
+                <ul>
+                  <li class="myRecentWorks">Ruby on rails</li>
+                  <li class="myRecentWorks">css</li>
+                  <li class="myRecentWorks">JavaScript</li>
+                  <li class="myRecentWorks">html</li>
+                </ul>
+                <button type="button" class="theButton">See Project</button>
+              </section>
+            </section>
             <section class="other">
               <section class="informationCard">
                 <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
@@ -113,7 +146,7 @@
             of my work and experience! If you like what you see and have a project 
             you need coded, don&apos;t hestiate to contact me.
           </p>
-          <button type="button" class="btn-cv">Get My Resume</button>
+            <button type="button" class="btn-cv">Get My Resume</button>
         </section>
         <section class="skills-card">
           <div class="img2-aboutme">
@@ -157,48 +190,49 @@
             </section>
           </div>
         </section>  
-      <section class="section-contact">
+      <section class="section-contact" id="section-contact">
         <img class="townRight" alt="">
-        <h2 class="description-contact color-blue">
+        <h2 class="ThirdTittle color-blue">
           I&apos;m always interested in hearing about new projects, 
           so if you'd like to chat please get in touch.
         </h2>
-        <form 
-          action="https://formspree.io/html/"
-          id="form"
-          method="post">
+        <section class="containerThirdTittleForm">
+          <form 
+            action="https://formspree.io/html/"
+            class="form"
+            method="post">
           
-          <input type="text"
-            id="full-name"
-            placeholder="Full name"
-            name="full-name"
-            maxlength="30"
-            required />
+            <input type="text"
+              id="full-name"
+              placeholder="Full name"
+              name="full-name"
+              maxlength="30"
+              required />
 
-          <input type="email"
-            id="email" 
-            placeholder="Email address"
-            name="email"
-            required/>
+            <input type="email"
+              id="email" 
+              placeholder="Email address"
+              name="email"
+              required/>
 
-          <textarea type="message"
-            id="message"
-            cols="30"
-            rows="10"
-            placeholder="Enter text here"
-            maxlength="500"
-            class="change"
-            required
-          ></textarea>
-          
-          <img src="./imges/contact-form-png.svg" alt="just backgound png" class="mobile-only"/>
+            <textarea type="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="Enter text here"
+              maxlength="500"
+              class="change"
+              required
+            ></textarea>
+            <img src="./imges/contact-form-png.svg" alt="just backgound png" class="mobile-only"/>
+            <button type="submit" class="theButton">Get in touch</button>
+          </form>
           <small id="message-error">
             Invalid Email. Please use lowercase characters.
           </small>
-          <button type="submit" class="theButton">Get in touch</button>
-        </form>
-        <p class="mobile-only">cilfonegabriel@gmail.com</p> 
+        </section> 
       </section>
+      <img src="imges/Rectangle.png" alt="end-portfolio mobile-only">
       <div class="social-media-icons">
         <ul class="socialContents2">
           <li><a href="https://twitter.com/GabrielCilfone" target='_blank'rel = "noopener noreferrer" ><img class= "icon"src="./imges/twitter.svg" alt="Twitter"></a></li>
@@ -207,8 +241,10 @@
           <li><a href="https://github.com/cilfonegabriel" target='_blank' rel = "noopener noreferrer" ><img class= "icon" src= "./imges/github.svg" alt="github"></a></li>
           <li><a href="https://angel.co/" target='_blank' rel = "noopener noreferrer" ><img class= "icon" src= "./imges/angellist.svg" alt="angellist"></a></li>
         </ul>
+        <section class="myMail">
+          <p class="mobile-only">cilfonegabriel@gmail.com</p> 
+        </section>
       </div>
-      <img src="./imges/Light.png" alt="end-portfolio mobile-only">
     </main>
   </body> 
 </html>
