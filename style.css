@@ -69,10 +69,8 @@ h2 {
 }
 
 .about-me p {
-  margin: 0% 5% 5% 5%; 
-  line-height: 32px;
-  font-size: 1.25rem;
-  font-family: 'Inter';
+  margin: 0% 5% 5% 5%;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 32px;
@@ -417,8 +415,6 @@ ul.tags-kill {
   width: 327px;
   height: 352px;
   box-sizing: border-box;
-  left: 0px;
-  right: 0px;
 }
 
 .tags-title h3 {
@@ -521,7 +517,7 @@ form textarea:focus {
 
 .form img {
   position: absolute;
-  right: 0;
+  right: 0px;
 }
 
 #message-error {
@@ -564,7 +560,7 @@ div {
   padding: 0em 2em;
   display: flex;
   align-items: center;
-  font-family: 'Inter';
+  font-family: "inter", sans-serif;
   font-weight: 700;
   font-size: 25px;
   line-height: 47px;
@@ -724,10 +720,6 @@ div {
     background-image: url("./imges/Desktop/about-me-illustration1.png");
     background-size: 100px;
     background-position-y: -15px;
-  }
-
-  .img1-aboutme + h2 {
-    padding: 0;
   }
 
   .supporting-text {
