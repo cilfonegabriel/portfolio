@@ -8,7 +8,6 @@ body {
 .color-blue {
   color: #172b4d;
   font-family: "Inter", sans-serif;
-  font-size: 2.5rem;
   text-align: center;
   font-weight: 700;
   font-size: 39px;
@@ -17,7 +16,7 @@ body {
 
 .light-green {
   color: #36b37e;
-  font-family: 'Inter';
+  font-family: "Inter", sans-serif;
   font-weight: 400;
 }
 
@@ -50,15 +49,42 @@ h2 {
   padding: 1.5em;
   background-repeat: no-repeat;
   background-size: 2;
-  background-size: 373px 739px
+  background-size: 373px 739px;
+}
+
+.tittleContents p {
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  line-height: 28px;
+}
+
+.supporting-text > p {
+  font-weight: 400;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.about-me p {
+  margin: 0% 5% 5% 5%; 
+  line-height: 32px;
+  font-size: 1.25rem;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  text-align: center;
 }
 
 #headline p {
-    font-family: 'Inter', sans-serif;
-    font-weight: 400;
-    height: 164px;
-    font-size: 20px;
-    line-height: 28px;
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  height: 164px;
+  font-size: 20px;
+  line-height: 28px;
 }
 
 .column-flex {
@@ -100,22 +126,6 @@ h2 {
 
 .supporting-text {
   padding-top: 1.5em;
-} 
-
-.tittleContents p {
-  text-align: center;
-  font-family: 'Inter', sans-serif;
-  font-weight: 400;
-  font-size: 1.25rem;
-  line-height: 28px;
-}
-
-.supporting-text > p {
-  font-weight: 400;
-  font-family: "Inter", sans-serif;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
 }
 
 .socialContents {
@@ -167,15 +177,15 @@ ul.socialContents {
 }
 
 .subTitle {
-    font-size: 1.5rem;
-    font-family: "inter", sans-serif;
-    width: 337px;
-    height: 26px;
-    top: 16px;
-    left: 16px;
-    font-weight: 600;
-    line-height: 32px;
-    text-align: center;
+  font-size: 1.5rem;
+  font-family: "inter", sans-serif;
+  width: 337px;
+  height: 26px;
+  top: 16px;
+  left: 16px;
+  font-weight: 600;
+  line-height: 32px;
+  text-align: center;
 }
 
 .theButton {
@@ -218,8 +228,6 @@ ul.socialContents {
 }
 
 .other {
-  left: 0px;
-  right: 0px;
   border: solid 1px #d0d9d4;
   background-color: #ebf0ee;
   border-radius: 10px;
@@ -234,7 +242,7 @@ ul.socialContents {
   text-align: center;
   font-size: 2.5rem;
   font-style: normal;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   line-height: 52px;
 }
 
@@ -312,17 +320,6 @@ li {
 #about-me button {
   display: block;
   margin: 1em auto;
-}
-
-.about-me p {
-  margin: 0% 5% 5% 5%; 
-  line-height: 32px;
-  font-size: 1.25rem;
-  font-family: 'Inter';
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 32px;
-  text-align: center;
 }
 
 .btn-cv {
@@ -435,8 +432,6 @@ ul.tags-kill {
   font-weight: bold;
   color: #36b37e;
   padding: 6px;
-
-  /* Theme 2 / Neutral 10 */
   background: #fff;
   border-radius: 4px;
 }
@@ -480,9 +475,9 @@ ul.tags-skill {
 }
 
 form {
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 10% 5% 5% 5%;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 10% 5% 5% 5%;
 }
 
 form input,
