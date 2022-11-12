@@ -517,7 +517,7 @@ form textarea:focus {
 
 .form img {
   position: absolute;
-  right: 0px;
+  right: 0.1px;
 }
 
 #message-error {
@@ -557,7 +557,7 @@ div {
 }
 
 #section-contact h2 {
-  padding: 0em 2em;
+  padding: 1em 2em;
   display: flex;
   align-items: center;
   font-family: "inter", sans-serif;
@@ -566,7 +566,7 @@ div {
   line-height: 47px;
   font-style: normal;
   height: 386px;
-} 
+}
 
 .myMail {
   font-family: "inter", sans-serif;
@@ -724,7 +724,7 @@ div {
 
   .supporting-text {
     padding-top: 1.5em;
-}
+  }
 
   .supporting-text > p {
     font-family: "Inter", sans-serif;
@@ -812,13 +812,12 @@ div {
   .containerThirdTittleForm {
     margin: 0;
     padding: 0;
-    width: 100%;
     float: left;
     margin-right: 7em;
     width: 893px;
   }
 
-  .ThirdTittle{
+  .ThirdTittle {
     align-items: center;
     width: fit-content;
     line-height: 3;
