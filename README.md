@@ -19,7 +19,7 @@ My personal portfolio
 
 >Alternatively, you can download the zip file of your project by clicking on the `Code` button on the right side of your project page and clicking on `Download ZIP`
 
->Step 3: Locate the folder where you cloned your project to and open the `index.html` file in your browser to view your project.
+>Step 3:  Locate the folder where you cloned your project to and open the `index.html` file in your browser to view your project.
 
 
 ## Author
@@ -28,6 +28,7 @@ My personal portfolio
 
 - GitHub: [Gabriel Cilfone](https://github.com/cilfonegabriel)
 - LinkedIn: [Gabriel Cilfone](www.linkedin.com/in/gabriel-cilfone/)
+- Website:  [Gabriel Cilfone](https://cilfonegabriel.github.io/portfolio/)
 
 
 ## 🤝 Contributing
