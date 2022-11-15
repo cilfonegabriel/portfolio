@@ -15,7 +15,7 @@ body {
 }
 
 .light-green {
-  color: #36b37e;
+  color: #27825c;
   font-family: "Inter", sans-serif;
   font-weight: 400;
 }
@@ -166,7 +166,7 @@ ul.socialContents {
 }
 
 .sep {
-  background-color: #36b37f;
+  background-color: #27825c;
   width: 55px;
   height: 6px;
   margin: none;
@@ -251,7 +251,7 @@ li {
 
 .aboutMeListItem {
   background-color: white;
-  color: #36b37e;
+  color: #28855e;
   border-radius: 4px;
   padding: 8px 12px;
   text-align: center;
@@ -321,7 +321,7 @@ li {
 }
 
 .btn-cv {
-  background-color: #36b37e;
+  background-color: #28855e;
   size: 17px;
   width: 159px;
   height: 48px;
