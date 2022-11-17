@@ -47,6 +47,9 @@ Give a ⭐ if you like this project!
 - Inspiration
 - etc
 
+## Explication about the project
+Here video: [Gabrie Cilfone](https://www.loom.com/share/52f0b673109344259b3f685f9bce96ae)
+
 ## 📝 License
 
 This project is [MIT](./LICENSE) licensed.
