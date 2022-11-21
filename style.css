@@ -3,6 +3,13 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 2em;
+
+  --shadow: 0 2px 10px -1px rgba(0, 0, 0, 0.8);
+  --shadow-accent: 0 2px 50px -1px rgba(0, 0, 0, 0.8);
+  --color-primary: #227452;
 }
 
 .container {
@@ -32,7 +39,7 @@ h2 {
   font-size: xx-large;
 }
 
-#overlay {
+/* #overlay {
   position: fixed;
   top: 0;
   bottom: 0;
@@ -42,7 +49,7 @@ h2 {
   opacity: 0.9;
   z-index: 100;
   display: none;
-}
+} */
 
 .menu-btn {
   background-color: white;
@@ -628,24 +635,33 @@ div {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  /* height: 90%; */
   background-color: white;
   color: #3a4a42;
   border: 1px lightgrey solid;
-  border-radius: 5px;
+  border-radius: 34px;
   z-index: 60;
+  height: 755px;
 }
 
 .btn-close-nav {
   position: fixed;
   z-index: 65;
+  display: block !important;
   text-align: center;
-  width: 100%;
+  width: 47%;
+  background: white;
+  border: none;
+}
+
+.newList {
+  list-style: none;
+  padding: 5px;
 }
 
 .cancel-cross {
   display: inline-block;
-  margin: 0 auto;
+  margin: 0.5em 0.5em;
 }
 /* #mobile-menu > ul {
   clear: right;
@@ -659,6 +675,7 @@ div {
   color: #3a4a42;
   font-size: x-large;
   font-weight: 700;
+  font-family: "inter", sans-serif;
 }
 
 .hidden {
