@@ -675,6 +675,10 @@ div {
   html {
     box-sizing: border-box;
   }
+  
+  .container{
+    display: none;
+  }
 
   header > a,
   header > img {
