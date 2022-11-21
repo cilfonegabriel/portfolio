@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { window.dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
     <link rel="stylesheet" href="style.css">
     <link rel= "https://fonts.googleapis.com/css2?family=Inter&display=swap" href="style.css">
     <title>Gabriel_Cilfone</title>
@@ -14,20 +22,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   </head>
   <body id="body">
-    <div id="overlay"></div>
-    <header id="header" class="container">
-      <a href="#" class="logo">Welcome</a>
-      <img src="./imges/Union.svg" id="menu-btn" alt="menu" ></a></li>
-    </header>
-    <div id="mobile-menu" class="mobile-only hidden">
-      <span
-       ><a href="#"><i class="fas fa-times" id="close"></i></a
-     ></span>
-     <ul>
-       <li><a href="#myRecentWork" class="menu-link">Portfolio</a></li>
-       <li><a href="#about-me" class="menu-link">About</a></li>
-       <li><a href="#section-contact" class="menu-link">Contact</a></li>
-      </ul>
+    <div class="overlay">
+      <header id="header" class="container">
+        <a href="#" class="logo">Welcome</a>
+        <button type="button" class="menu-btn">
+          <img src="./imges/Union.svg" alt="menu">
+        </button>
+        <nav class="header-nav-mobile hidden">
+          <button type="button" class="btn-close-nav">
+            <img src="./imges/Icon-Cancel.svg" alt="cancel icon" class="cancel-cross">
+          </button>
+          <ul>
+            <li><a href="#myRecentWork" class="menu-link">Portfolio</a></li>
+            <li><a href="#about-me" class="menu-link">About</a></li>
+            <li><a href="#section-contact" class="menu-link">Contact</a></li>
+          </ul>
+        </nav>  
+      </header> 
     </div>
     <main class="stop">
       <section id="headline" class="column-flex"> 
@@ -246,5 +257,6 @@
         </section>
       </div>
     </main>
+    <script src="./index.js"></script>
   </body> 
 </html>

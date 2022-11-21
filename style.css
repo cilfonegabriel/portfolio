@@ -5,6 +5,13 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+.container {
+  padding: 25px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .color-blue {
   color: #172b4d;
   font-family: "Inter", sans-serif;
@@ -35,6 +42,24 @@ h2 {
   opacity: 0.9;
   z-index: 100;
   display: none;
+}
+
+.menu-btn {
+  background-color: white;
+  border: none;
+  width: fit-content;
+  align-self: center;
+  background: var(--color-primary);
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 2px;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.mobile-only {
+  
 }
 
 .container {
@@ -587,19 +612,45 @@ div {
   background-size: 130px;
 }
 
-#mobile-menu {
+/* #mobile-menu {
   height: 85vh;
   border-bottom-right-radius: 2em;
   border-bottom-left-radius: 2em;
   margin-bottom: 2em;
   mix-blend-mode: normal;
   box-shadow: 0 1em 1em rgba(37, 47, 137, 0.08);
+} */
+
+.header-nav-mobile {
+  position: fixed;
+  top: 0%;
+  right: 0%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: #3a4a42;
+  border: 1px lightgrey solid;
+  border-radius: 5px;
+  z-index: 60;
 }
 
-#mobile-menu > ul {
+.btn-close-nav {
+  position: fixed;
+  z-index: 65;
+  text-align: center;
+  width: 100%;
+}
+
+.cancel-cross {
+  display: inline-block;
+  margin: 0 auto;
+}
+/* #mobile-menu > ul {
   clear: right;
   padding-left: 0;
-}
+} */
 
 .menu-link {
   display: block;
