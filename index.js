@@ -1,11 +1,11 @@
 const menuBtn = document.querySelector('.menu-btn');
 const headerNavMobile = document.querySelector('.header-nav-mobile');
-const btnCloseNav = document.querySelector('.btn-close-nav');
+const cancelCross = document.querySelector('.cancel-cross');
 
 menuBtn.addEventListener('click', () => {
     headerNavMobile.classList.remove('hidden')
-    //headerNavMobile.classList.add('hidden');
-    //console.log(menuBtn);
-    //console.log(menuNewVar);
-});
 
+});
+cancelCross.addEventListener('click', () => {
+    headerNavMobile.classList.add('hidden')
+})
