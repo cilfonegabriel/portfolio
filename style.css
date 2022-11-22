@@ -3,7 +3,6 @@
 body {
   margin: 0;
   font-family: "Inter", sans-serif;
-  margin: 0;
   padding: 0;
   padding-bottom: 2em;
 
@@ -39,18 +38,6 @@ h2 {
   font-size: xx-large;
 }
 
-/* #overlay {
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  background: #ebf0ee;
-  width: 100vw;
-  height: 108vh;
-  opacity: 0.6;
-  z-index: 100;
-  display: none;
-} */
-
 .menu-btn {
   background-color: white;
   border: none;
@@ -62,12 +49,6 @@ h2 {
   color: white;
   border-radius: 3px;
   cursor: pointer;
-}
-
-.container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 #headline {
@@ -614,15 +595,6 @@ div {
   background-size: 130px;
 }
 
-/* #mobile-menu {
-  height: 85vh;
-  border-bottom-right-radius: 2em;
-  border-bottom-left-radius: 2em;
-  margin-bottom: 2em;
-  mix-blend-mode: normal;
-  box-shadow: 0 1em 1em rgba(37, 47, 137, 0.08);
-} */
-
 .header-nav-mobile {
   position: fixed;
   top: 0%;
@@ -630,6 +602,7 @@ div {
   display: flex;
   flex-direction: column;
   width: 100%;
+
   /* height: 90%; */
   background-color: white;
   color: #3a4a42;
@@ -638,7 +611,6 @@ div {
   z-index: 160;
 }
 
-
 .cancel-cross {
   display: inline-block;
   width: 24px;
@@ -646,10 +618,6 @@ div {
   position: absolute;
   top: 10px;
   left: 24%;
-}
-
-.cancel-cross {
-  display: inline-block;
 }
 
 .menu-link {
@@ -675,8 +643,8 @@ div {
   html {
     box-sizing: border-box;
   }
-  
-  .container{
+
+  .container {
     display: none;
   }
 
