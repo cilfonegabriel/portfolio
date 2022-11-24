@@ -7,7 +7,7 @@ My personal portfolio
 
 ## Built With
 
-- Html & Css
+- Html & Css & Java Script
 
 ## Getting Started
 

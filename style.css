@@ -693,10 +693,6 @@ div {
     color: #008552;
   }
 
-  .only-desktop {
-    display: block;
-  }
-
   .tittleContents > h2 {
     font-size: 275%;
   }
