@@ -18,6 +18,13 @@ body {
   align-items: center;
 }
 
+.container-desk {
+  padding: 25px 36px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .color-blue {
   color: #172b4d;
   font-family: "Inter", sans-serif;
@@ -192,6 +199,14 @@ ul.socialContents {
   font-weight: 600;
   line-height: 32px;
   text-align: center;
+}
+
+.cardTag > li {
+  background: lightgray;
+  font-size: 12px;
+  padding: 0.5em;
+  margin: 0 0.5em;
+  border-radius: 2px;
 }
 
 .theButton {
@@ -638,6 +653,55 @@ div {
   transform: scale(1.3);
 }
 
+.project-placeholder {
+  background: #ebf0ee;
+  height: auto;
+  margin: 10px;
+
+  /* Design the grid item */
+  border: 2px solid #d0d9d4;
+  border-radius: 8px;
+
+  /* Auto layout */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: stretch;
+  padding: 0 2px;
+}
+
+.project-placeholder img {
+  width: 100%;
+  height: auto;
+  padding: 3px;
+  border-radius: 5px;
+}
+
+.card-work-details-mobile {
+  display: grid;
+  padding: 16px;
+  font-size: 16px;
+  background: #fff;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transition: 2000ms ease-in-out;
+  transform: translate(-50%, -50%) scale(1);
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+} */
+
+.card-image-details-mobile {
+  overflow: hidden;
+  box-sizing: border-box;
+  border-radius: 16px;
+}
+
+
 @media (min-width: 768px) {
   /* Standard CSS rules */
   html {
@@ -646,6 +710,13 @@ div {
 
   .container {
     display: none;
+  }
+
+  .container-desk {
+    padding: 25px 36px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   header > a,
@@ -701,6 +772,14 @@ div {
     font-size: 275%;
   }
 
+  .myRecentWork {
+    width: 95%;
+    margin: 2em;
+    -ms-grid-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    gap: 5px;
+  }
+
   .primary > h1 {
     text-align: center;
     font-size: 2.5rem;
@@ -734,6 +813,11 @@ div {
     justify-content: center;
     height: 100%;
     width: 100%;
+  }
+
+  
+  .only-desktop {
+    display: block;
   }
 
   .img1-aboutme {
@@ -804,7 +888,7 @@ div {
     transform: scale(1.05);
   }
 
-  .container > li:hover {
+  .container-desk > li:hover {
     transform: rotate(360deg);
     transition: 1.5s;
   }

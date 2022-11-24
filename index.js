@@ -1,3 +1,7 @@
+import defaultExport from './popUp.js';
+
+const showPopUp = defaultExport;
+
 const menuBtn = document.querySelector('.menu-btn');
 const headerNavMobile = document.querySelector('.header-nav-mobile');
 const cancelCross = document.querySelector('.cancel-cross');
@@ -21,45 +25,68 @@ const cardGrid = document.querySelector('.cardGrid')
 
 const projects = [
     {
+    imagen : '()',
     titulo:"Multi-Post Stories Gain+Glory",
     tecnologias:["Ruby on rails", "css","JavaScript","html"],
     },
     {
+    imagen : '()',
     titulo:"Multi-Post Stories Gain+Glory",
-    tecnologias:[ "dos","una","otra"],
-    boton:"See Project",
-    imagen:"()",
+    tecnologias:["Ruby on rails", "css","JavaScript","html"],
+    },
+    {
+    imagen : '()',
+    titulo:"Multi-Post Stories Gain+Glory",
+    tecnologias:["Ruby on rails", "css","JavaScript","html"],
+    },
+    {
+      imagen : '()',
+    titulo:"Multi-Post Stories Gain+Glory",
+    tecnologias:["Ruby on rails", "css","JavaScript","html"],
+    },
+    {
+    imagen : '()',
+    titulo:"Multi-Post Stories Gain+Glory",
+    tecnologias:["Ruby on rails", "css","JavaScript","html"],
+    },
+    {
+    imagen : '()',
+    titulo:"Multi-Post Stories Gain+Glory",
+    tecnologias:["Ruby on rails", "css","JavaScript","html"],
     },
 ];
 
-const cardMobile = (insert) => { 
-    //creando contenedor de la tarjeta
-    const cardElement =  document. createElement("section") 
-    //asignando propiedades del contenedor cardElement (class,id)
-    cardElement.classList.add('post')
-    cardElement.id = 'myRecentWork';
-    //creando titulo de la tarjeta 
-    const  cardTitle = document. createElement('h3')
-    cardTitle.classList.add('subtitle')
-    cardTitle.innerText = project.titulo; 'esto es texto'
-
-    //creando tecnologias
-    const ulCard = document. createElement('ul')
-    // creando hijo de tecnologías (li)
-
-    project.tecnologias.forEach((tec)=>{
-        const listItem = document. createElement('li')
-        listItem.classList.add('myRecentWorkItem')
-        listItem.innerText = tec;
-        ulCard.appendChild(listItem)
-    })
+const projectsCards = document.getElementById('projects-card');
 
 
-// insert cards into cardsGird : iterar arreglo de proyectos e insertar tarjetas
+function displayProject(projectId) {
+    projectsCards.innerHTML += `
+      <section class="other">
+          <section class="informationCard">
+              <h3 class="subTitle">
+                ${projects[projectId].titulo}
+              </h3> 
+              <ul class = "cardTag">
+                  <li>${projects[projectId].tecnologias[0]}</li>
+                  <li>${projects[projectId].tecnologias[1]}</li>
+                  <li>${projects[projectId].tecnologias[2]}</li>
+                  <li>${projects[projectId].tecnologias[3]}</li>
+              </ul>
+              <button type="button" class="theButton">See Project</button>
+          </section>
+      </section>
+    `;
+}
 
-const insertCards = ()=>{
-    projects.forEach((project)=>{
+for (let i = 0; i < projects.length; i++) {
+  displayProject(i);
+}
 
-        createcard(project)
-    })
+// // add eventListener to each project's button to fire the popUp after click.
+const projectsBtn = document.querySelectorAll('.theButton');
+
+for (let i = 0; i < projectsBtn.length; i += 1) {
+  projectsBtn[i].addEventListener('click', () => {
+    showPopUp(i);
+  });
 }
