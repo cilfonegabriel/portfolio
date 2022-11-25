@@ -1,182 +1,148 @@
 #overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background: #ebf0ee;
+  width: 100vw;
+  height: 108vh;
+  opacity: 0.9;
+  z-index: 100;
+  display: none;
+}
+
+.popUp {
+  width: 90vw;
+  margin-left: 20px;
+  padding: 8px 0 0 0;
+  font-family: "inter", sans-serif;
+  border: 1px solid #dfe1e6;
+  box-sizing: border-box;
+  border-radius: 16px;
+  position: fixed;
+  top: 5px;
+  background-color: white;
+  z-index: 200;
+}
+
+.popUp-close {
+  color: white;
+  font-size: 18px;
+}
+
+.popUp-title {
+  width: 259px;
+  font-size: 32px;
+  color: #172b4d;
+  font-weight: bold;
+  margin-top: 2px;
+}
+
+.pop-pDesk {
+  display: none;
+  font-size: 16px;
+}
+
+.popUp-list {
+  display: flex;
+  font-size: 16px;
+  margin-left: -40px;
+  margin-top: -16px;
+}
+
+.popUp-items {
+  color: #3a4a42;
+  font-size: 12px;
+  background-color: #ebf0ee;
+  border-radius: 4px;
+}
+
+.popUp-descr {
+  font-size: 16px;
+  margin: 0 16px 20px 0;
+  color: #344563;
+}
+
+.lateral {
+  padding: 0 0 0 10px;
+  font-family: "inter", sans-serif;
+}
+
+.popup-image {
+  margin: auto;
+  width: 275px;
+  height: 220px;
+  background-image: url(./img/Mobile-popup-image.png);
+  background-repeat: no-repeat;
+}
+
+.desk {
+  display: none;
+}
+
+.popUp-btn {
+  display: flex;
+  justify-content: space-between;
+  margin: -10px 16px 0 0;
+  padding-bottom: 15px;
+}
+
+.p-btn {
+  width: 126px;
+  height: 48px;
+  background: #36b37f;
+  border-radius: 4px;
+  color: white;
+  font-size: 15px;
+  font-family: "inter", sans-serif;
+  border: none;
+}
+
+.live {
+  width: 14px;
+  height: 14px;
+}
+
+@media only screen and (min-width: 768px) {
+  #overlay {
     position: fixed;
     top: 0;
     bottom: 0;
     background: #ebf0ee;
     width: 100vw;
     height: 108vh;
-    opacity: 0.9;
+    opacity: 0.99;
     z-index: 100;
     display: none;
   }
 
-.popUp {
-    width: 90vw;
-    margin-left: 20px;
-    padding: 8px 0 0 0;
-    font-family: "inter", sans-serif;
-    border: 1px solid #dfe1e6;
-    box-sizing: border-box;
-    border-radius: 16px;
-    position: fixed;
-    top: 5px;
-    background-color: white;
+  .popUp {
+    width: 62vw;
     z-index: 200;
+    position: fixed;
+    overflow-y: scroll;
+    height: 100vh;
+    margin-left: 20%;
   }
 
-.popUp-close {
-    color: white;
-    font-size: 18px;
-  }
-
-.popup-image {
-    margin: auto;
-    width: 311px;
-    height: 220px;
-    background-image: url(./imges/Desktop/Snapshoot_mobile.svg);
-    background-repeat: no-repeat;
-  }
-
-  
-.lateral {
-    padding: 0 0 0 10px;
-    font-family: "inter", sans-serif;
-  }
-
-  .popUp-title {
-    line-height: 44px;
-    width: 259px;
-    font-size: 32px;
-    color: #172b4d;
-    font-weight: bold;
-    margin-top: 2px;
-    font-weight: 600;
-    margin: 0px 0px 16px 0px;
-  }
-
-  .popUp-list {
-    display: flex;
-    flex-direction: row;
-    /* font-size: 16px; */
-    /* margin-left: -40px; */
-    /* margin-top: -16px; */
-    padding: 0px;
-    gap: 8px;
-  }
-
-  .popUp-items {
-    color: #3a4a42;
-    /* font-size: 12px; */
-    background-color: #ebf0ee;
-    border-radius: 4px;
-    display: flex;
-    flex-direction: row;
+  .popUp-close {
+    color: #67798e;
+    margin-top: 4px;
+    background-color: #ebecf0;
+    width: 20px;
+    height: 20px;
     align-items: center;
-    padding: 6px 12px;
-    width: 103px;
-    height: 32px;
+    padding-left: 4px;
   }
 
-  .desk {
-    display: none;
-  }
-
-  .popUp-descr {
-    font-size: 16px;
-    margin: 0 16px 20px 0;
-    color: #344563;
-  }
-
-  .popUp-btn {
-    display: flex;
-    justify-content: space-between;
-    margin: -10px 16px 0 0;
-    padding-bottom: 15px;
-  }
-
- .p-btn {
-    width: 126px;
-    height: 48px;
-    background: #36b37f;
-    border-radius: 4px;
-    color: white;
-    font-size: 15px;
-    font-family: "inter", sans-serif;
-    border: none;
-    background-image: url('./imges/Enable.svg');
-  } 
-
-  .p-btn2 {
-    width: 126px;
-    height: 48px;
-    background: #36b37f;
-    border-radius: 4px;
-    color: white;
-    font-size: 15px;
-    font-family: "inter", sans-serif;
-    border: none;
-    background-image: url('./imges/Desktop/');
-  }
-
-  .live {
-    width: 14px;
-    height: 14px;
-  }
-
-  .pop-pDesk {
-    display: none;
-    font-size: 16px;
-  }
-
-  
-@media only screen and (min-width: 768px) {
-    #overlay {
-      position: fixed;
-      top: 0;
-      bottom: 0;
-      background: #ebf0ee;
-      width: 100vw;
-      height: 108vh;
-      opacity: 0.99;
-      z-index: 100;
-      display: none;
-    }
-  
-    .popUp {
-      width: 62vw;
-      z-index: 200;
-      position: fixed;
-      overflow-y: scroll;
-      height: 100vh;
-      margin-left: 20%;
-    }
-  
-    .popUp-close {
-      color: #67798e;
-      margin-top: 4px;
-      background-color: #ebecf0;
-      width: 20px;
-      height: 20px;
-      align-items: center;
-      padding-left: 4px;
-    }
-
-    
   .popup-image {
-    background-image: url(./imges/Snapshoot\ Portfolio.svg);
+    background-image: url(./img/Desktop-popup-image.png);
     background-repeat: no-repeat;
     width: 800px;
     height: 600px;
     margin-top: 30px;
   }
 
-  .lateral {
-    display: flex;
-    flex-direction: row;
-  }
-
   .popUp-title {
-    width: 589px;
     margin-top: 20px;
   }
 
@@ -184,8 +150,13 @@
     display: block;
   }
 
-.popUp-descr {
+  .popUp-descr {
     display: none;
+  }
+
+  .lateral {
+    display: flex;
+    flex-direction: row;
   }
 
   .popUp-btn {
@@ -201,9 +172,8 @@
     font-size: 14px;
   }
 
-  .live {
-    width: 14px;
-    height: 14px;
+  .btn2 {
+    margin-left: 10px;
   }
 
   .pop-pDesk {
@@ -217,8 +187,11 @@
     padding-bottom: 40px;
   }
 
-  .btn2 {
-    margin-left: 10px;
+  .live {
+    width: 14px;
+    height: 14px;
   }
 
 }
+
+
