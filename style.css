@@ -596,19 +596,17 @@ div {
 }
 
 .header-nav-mobile {
-  position: fixed;
+  position: absolute;
   top: 0%;
   right: 0%;
   display: flex;
   flex-direction: column;
   width: 100%;
-
-  /* height: 90%; */
+  height: 100%;
   background-color: white;
   color: #3a4a42;
   border: 1px lightgrey solid;
   border-radius: 5px;
-  z-index: 160;
 }
 
 .cancel-cross {
