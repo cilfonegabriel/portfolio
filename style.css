@@ -108,7 +108,7 @@ h2 {
   flex-direction: column;
   justify-content: space-around;
   align-items: stretch;
-  padding: 191px 3px 0px;
+  padding: 191px 3px 0;
 }
 
 .center {
@@ -130,7 +130,7 @@ h2 {
   gap: 1.5em;
 }
 
-.properties { 
+.properties {
   height: auto;
   background: #fff;
   border-radius: 8px;
@@ -647,34 +647,33 @@ form {
 }
 
 @media only screen and (min-width: 1083px) {
-  
-.properties {
-  height: auto;
-  background: #fff;
-  border-radius: 8px;
-  margin: 2px;
-  padding-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: center;
-  width: 299px;
+  .properties {
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    margin: 2px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    width: 299px;
+  }
 }
-}
+
 @media only screen and (min-width: 1083px) {
-  
-.properties {
-  height: auto;
-  background: #fff;
-  border-radius: 8px;
-  margin: 2px;
-  padding-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-  text-align: center;
-  width: 299px;
-}
+  .properties {
+    height: auto;
+    background: #fff;
+    border-radius: 8px;
+    margin: 2px;
+    padding-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    width: 299px;
+  }
 }

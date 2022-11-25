@@ -21,7 +21,7 @@ closeMenu.addEventListener('click', () => {
   bodyApp.style.overflow = 'visible';
 });
 
-for (let i = 0; i < menuLi.length; i++) {
+for (let i = 0; i < menuLi.length; i += 1) {
   menuLi[i].addEventListener('click', () => {
     header.classList.remove('hidden');
     mobileMenu.classList.add('hidden');
@@ -91,7 +91,7 @@ function displayProject(projectId) {
   `;
 }
 
-for (let i = 0; i < projectsData.length; i++) {
+for (let i = 0; i < projectsData.length; i += 1) {
   displayProject(i);
 }
 
