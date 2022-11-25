@@ -609,13 +609,18 @@ div {
   border-radius: 5px;
 }
 
+.ul {
+  list-style: none;
+  padding: 0; 
+}
+
 .cancel-cross {
   display: inline-block;
   width: 24px;
   height: auto;
   position: absolute;
   top: 10px;
-  left: 24%;
+  right: 9%;
 }
 
 .menu-link {
