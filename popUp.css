@@ -126,8 +126,8 @@
     z-index: 200;
     position: fixed;
     overflow-y: scroll;
-    height: 100vh;
     margin-left: 20%;
+    margin-top: 67px;
   }
 
   .popUp-close {
