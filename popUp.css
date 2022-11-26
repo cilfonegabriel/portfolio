@@ -36,10 +36,10 @@
   font-weight: bold;
   margin-top: 2px;
 }
- 
+
 #close-popUp {
-color: #89c0fd;
-} 
+  color: #89c0fd;
+}
 
 .pop-pDesk {
   display: none;
@@ -200,6 +200,6 @@ color: #89c0fd;
   }
 
   #close-popUp {
-    color: #67798E;
-    } 
+    color: #67798e;
+  }
 }
