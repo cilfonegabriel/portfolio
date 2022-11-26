@@ -124,10 +124,8 @@
   .popUp {
     width: 62vw;
     z-index: 200;
-    position: fixed;
     overflow-y: scroll;
-    margin-left: 20%;
-    margin-top: 67px;
+    margin: 85px 0px 0px 212px;
   }
 
   .popUp-close {
@@ -143,7 +141,7 @@
   .popup-image {
     background-image: url(./img/Desktop-popup-image.png);
     background-repeat: no-repeat;
-    width: 800px;
+    width: 652px;
     height: 600px;
     margin-top: 30px;
   }
