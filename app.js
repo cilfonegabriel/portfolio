@@ -102,3 +102,10 @@ for (let i = 0; i < projectsBtn.length; i += 1) {
     showPopUp(i);
   });
 }
+
+//Email error
+const finishform = document.querySelector('.form');
+const email = document.getElementById('email');
+const emailError =document.getElementById('error-message')
+const regExp = /^[a-z0-9]+@[a-z0-9-]+\.[a-z0-9-.]+$/;
+console.log(finishform)
