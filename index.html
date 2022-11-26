@@ -1,260 +1,233 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { window.dataLayer.push(arguments); }
-        gtag('js', new Date());
-
-        gtag('config', 'GA_MEASUREMENT_ID');
-    </script>
-    <link rel="stylesheet" href="style.css">
-    <link rel= "https://fonts.googleapis.com/css2?family=Inter&display=swap" href="style.css">
-    <title>Gabriel_Cilfone</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" Achraf KHITER Portfolio." />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./popUp.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Gabriel Cilfone</title>
   </head>
   <body id="body">
-    <header>
-      <div id="header" class="container">
-        <a href="#" class="logo">Welcome</a>
-        <button type="button" class="menu-btn">
-          <img src="./imges/Union.svg" alt="menu">
-        </button>   
-        <nav class="header-nav-mobile hidden">
-            <img src="./imges/Icon-Cancel.svg" alt="cancel icon" class="cancel-cross">
-          <ul>
-            <li><a href="#myRecentWork" class="menu-link">Portfolio</a></li>
-            <li><a href="#about-me" class="menu-link">About</a></li>
-            <li><a href="#section-contact" class="menu-link">Contact</a></li>
-          </ul>
-        </nav>  
-      </div>  
+    <div id="overlay"></div>
+    <header class="flex-row-header" id="header">
+      <a href="#" class="logo">Welcome</a>
+      <img src="img/Icons/Union.png" alt="menu button" id="menu-btn" />
     </header>
+    <div id="mobile-menu" class="only-mobile hidden">
+      <span
+        ><a href="#"><i class="fas fa-times" id="close"></i></a
+      ></span>
+      <ul>
+        <li><a href="#my-works" class="menu-link">Portfolio</a></li>
+        <li><a href="#about-me" class="menu-link">About</a></li>
+        <li><a href="#contact-section" class="menu-link">Contact</a></li>
+      </ul>
+    </div>
     <main class="stop">
-      <section id="headline" class="column-flex"> 
+      <section id="headline" class="headline-section flex-column">
         <nav class="only-desktop">
-          <ul class="container">
-            <li><a href="#portfolio">Portfolio</a></li>
+          <ul class="flex-row-header">
+            <li><a href="#">Portfolio</a></li>
             <li><a href="#about-me">About</a></li>
-            <li><a href="#section-contact">Contact</a></li>
+            <li><a href="#contact-section">Contact</a></li>
           </ul>
         </nav>
         <div class="primary">
-          <h1 class="color-blue">
+          <h1 class="dark-blue">
             Hey there. I'm Gabriel Cilfone
             <br />
             <span class="light-green">I'm a software developer</span>
           </h1>
         </div>
         <div class="supporting-text">
-          <p class="color-blue">
-            I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have aproject you need coded, don't hestiate to contact me.</p>
+          <p class="dark-blue">
+            I can help you build a product , feature or website Look through
+            some of my work and experience! If you like what you see and have a
+            project you need coded, don't hestiate to contact me.
+          </p>
         </div>
         <div class="social-media-icons">
-          <ul class="socialContents">
-            <li><a href="https://twitter.com/GabrielCilfone" target='_blank'rel = "noopener noreferrer" ><img class= "icon"src="./imges/twitter.svg" alt="Twitter"></a></li>
-            <li><a href="https://www.linkedin.com/in/gabriel-cilfone/"target='_blank' rel = "noopener noreferrer" ><img class= "icon" src="./imges/Linkedin icon.svg" alt="linkedin"></a></li>
-            <li><a href="https://medium.com/" target='_blank' rel = "noopener noreferrer" ><img class= "icon" src= "./imges/medium.svg" alt="medium"></a></li>
-            <li><a href="https://github.com/cilfonegabriel" target='_blank' rel = "noopener noreferrer" ><img class= "icon" src= "./imges/github.svg" alt="github"></a></li>
-            <li><a href="https://angel.co/" target='_blank' rel = "noopener noreferrer" ><img class= "icon" src= "./imges/angellist.svg" alt="angellist"></a></li>
+          <ul class="flex-div">
+            <li>
+              <a href="#"
+                ><img src="img/Icons/twitter.svg" alt="twitter-icone"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/Icons/LinkedinIcon.svg" alt="Linkedin-icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/Icons/medium.svg" alt="medium-icone"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/Icons/github.svg" alt="github-icone"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="img/Icons/angellist.svg" alt="angellist-icone"
+              /></a>
+            </li>
           </ul>
         </div>
-      </section> 
-      <section>
-        <hr class="sep">
-        <section class="myRecentWork" id="myRecentWork">
-          <h2 class="color-blue"> My Recent Works</h2>
-          <div  class="middle">
-            <section class="other">
-              <section class="informationCard">
-                <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
-                <ul>
-                  <li class="myRecentWorks">Ruby on rails</li>
-                  <li class="myRecentWorks">css</li>
-                  <li class="myRecentWorks">JavaScript</li>
-                  <li class="myRecentWorks">html</li>
-                </ul>
-                <button type="button" class="theButton">See Project</button>
-              </section>
-            </section>
-            <section class="other">
-              <section class="informationCard">
-                <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
-                <ul>
-                  <li class="myRecentWorks">Ruby on rails</li>
-                  <li class="myRecentWorks">css</li>
-                  <li class="myRecentWorks">JavaScript</li>
-                  <li class="myRecentWorks">html</li>
-                </ul>
-                <button type="button" class="theButton">See Project</button>
-              </section>
-            </section>
-            <section class="other">
-              <section class="informationCard">
-                <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
-                <ul>
-                  <li class="myRecentWorks">Ruby on rails</li>
-                  <li class="myRecentWorks">css</li>
-                  <li class="myRecentWorks">JavaScript</li>
-                  <li class="myRecentWorks">html</li>
-                </ul>
-                <button type="button" class="theButton">See Project</button>
-              </section>
-            </section>
-            <section class="other">
-              <section class="informationCard">
-                <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
-                <ul>
-                  <li class="myRecentWorks">Ruby on rails</li>
-                  <li class="myRecentWorks">css</li>
-                  <li class="myRecentWorks">JavaScript</li>
-                  <li class="myRecentWorks">html</li>
-                </ul>
-                <button type="button" class="theButton">See Project</button>
-              </section>
-            </section>
-            <section class="other">
-              <section class="informationCard">
-                <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
-                <ul>
-                  <li class="myRecentWorks">Ruby on rails</li>
-                  <li class="myRecentWorks">css</li>
-                  <li class="myRecentWorks">JavaScript</li>
-                  <li class="myRecentWorks">html</li>
-                </ul>
-                <button type="button" class="theButton">See Project</button>
-              </section>
-            </section>
-            <section class="other">
-              <section class="informationCard">
-                <h3 class="subTitle">Multi-Post Stories Gaing+Glory</h3> 
-                <ul>
-                  <li class="myRecentWorks">Ruby on rails</li>
-                  <li class="myRecentWorks">css</li>
-                  <li class="myRecentWorks">JavaScript</li>
-                  <li class="myRecentWorks">html</li>
-                </ul>
-                <button type="button" class="theButton">See Project</button>
-              </section>
-            </section>
-          </div>  
-        </section>
-        <section class="about-me" id="about-me">
-          <img class="img1-aboutme" src="./imges/aboutme-img1.png" alt="About me">
-          <h2 class="color-blue">About me</h2>
-          <p class="color-blue">
-            I can help you build a product , feature or website Look through some 
-            of my work and experience! If you like what you see and have a project 
-            you need coded, don&apos;t hestiate to contact me.
-          </p>
-            <button type="button" class="btn-cv">Get My Resume</button>
-        </section>
-        <section class="skills-card">
-          <div class="img2-aboutme">
-            <section class="postOne">
-              <section class="my-placeholder">
-                <img src="./imges/Icon Name.svg" alt="Skill"/>
-                <h3 class="subTitle">Languages</h3>
-                <ul>
-                  <li class="aboutMeListItem">Javascript</li>
-                  <li class="aboutMeListItem">Ruby</li>
-                  <li class="aboutMeListItem">Html</li>
-                  <li class="aboutMeListItem">CSS</li>
-                </ul>
-              </section>
-            </section>
-            <section class="postOne">
-              <section class="my-placeholder">
-                <img src="./imges/Group.svg" alt="skill"/>
-                <h3 class="subTitle">Frameworks</h3>
-                <ul>
-                  <li class="aboutMeListItem">Bootstrap</li>
-                  <li class="aboutMeListItem">Ruby on rails</li>
-                  <li class="aboutMeListItem">Rspec</li>
-                  <li class="aboutMeListItem">Capybara</li>
-                  <li class="aboutMeListItem">Selenium</li>
-                </ul>
-              </section>
-            </section>
-            <section class="postOne">
-              <section class="my-placeholder">
-                <img src="./imges/Icon Name.svg" alt="skill">
-                <h3 class="subTitle">Skills</h3>
-                <ul>    
-                  <li class="aboutMeListItem">Codekit</li>
-                  <li class="aboutMeListItem">Github</li>
-                  <li class="aboutMeListItem">Codepen</li>
-                  <li class="aboutMeListItem">Gitlab</li>  
-                  <li class="aboutMeListItem">Terminal</li>     
-                </ul>
-              </section> 
-            </section>
-          </div>
-        </section>  
-      <section class="section-contact" id="section-contact">
-        <img class="townRight">
-        <h2 class="ThirdTittle color-blue">
-          I&apos;m always interested in hearing about new projects, 
-          so if you'd like to chat please get in touch.
-        </h2>
-        <section class="containerThirdTittleForm">
-          <form 
-            action="https://formspree.io/html/"
-            class="form"
-            method="post">
-          
-            <input type="text"
-              id="full-name"
-              placeholder="Full name"
-              name="full-name"
-              maxlength="30"
-              required />
-
-            <input type="email"
-              id="email" 
-              placeholder="Email address"
-              name="email"
-              required/>
-
-            <textarea type="message"
-              id="message"
-              cols="30"
-              rows="10"
-              placeholder="Enter text here"
-              maxlength="500"
-              class="change"
-              required
-            ></textarea>
-            <img src="./imges/contact-form-png.svg" alt="Just backgound png" class="mobile-only"/>
-            <button type="submit" class="theButton">Get in touch</button>
-          </form>
-          <small id="message-error">
-          Invalid Email. Please use lowercase characters.
-          </small>
-        </section> 
+        <img
+          src="img/Icons/Disabled.png"
+          alt="disabled btn to scroll down"
+          class="disabled-btn"
+        />
       </section>
-      <img src="imges/Rectangle.png" alt="end-portfolio mobile-only">
-      <div class="social-media-icons">
-        <ul class="socialContents2">
-          <li><a href="https://twitter.com/GabrielCilfone" target='_blank'rel = "noopener noreferrer" ><img class= "icon"src="./imges/twitter.svg" alt="Twitter"></a></li>
-          <li><a href="https://www.linkedin.com/in/gabriel-cilfone/"target='_blank' rel = "noopener noreferrer" ><img class= "icon" src="./imges/Linkedin icon.svg" alt="linkedin"></a></li>
-          <li><a href="https://medium.com/" target='_blank' rel = "noopener noreferrer" ><img class= "icon" src= "./imges/medium.svg" alt="medium"></a></li>
-          <li><a href="https://github.com/cilfonegabriel" target='_blank' rel = "noopener noreferrer" ><img class= "icon" src= "./imges/github.svg" alt="github"></a></li>
-          <li><a href="https://angel.co/" target='_blank' rel = "noopener noreferrer" ><img class= "icon" src= "./imges/angellist.svg" alt="angellist"></a></li>
-        </ul>
-        <section class="myMail">
-          <p class="mobile-only">cilfonegabriel@gmail.com</p> 
-        </section>
-      </div>
+      <section id="my-works">
+        <h2 class="dark-blue">My Recent Works</h2>
+        <img src="img/Indicator.png" alt="Indicator" class="center" />
+        <div id="projects-card" class="grid-layout"></div>
+      </section>
+      <section id="about-me">
+        <div class="png1">
+          <h2 class="dark-blue">About me</h2>
+        </div>
+        <p class="dark-blue">
+          I can help you build a product , feature or website Look through some
+          of my work and experience! If you like what you see and have a project
+          you need coded, don't hestiate to contact me.
+        </p>
+        <div class="png2">
+          <button type="button" class="get-CV-btn">Get My Resume</button>
+        </div>
+        <div id="skills-card" class="grid-layout">
+          <div class="skill-placeholder">
+            <img src="img/Icons/skill1.png" alt="skill" />
+            <div class="title-and-tags">
+              <h3 class="dark-blue">Languages</h3>
+              <ul class="flex-row-skills skill-tags">
+                <li><a href="#">Ruby on rails</a></li>
+                <li><a href="#">css</a></li>
+                <li><a href="#">JavaScript</a></li>
+                <li><a href="#">html</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-placeholder">
+            <img src="img/Icons/skill2.png" alt="skill" />
+            <div class="title-and-tags">
+              <h3 class="dark-blue">Frameworks</h3>
+              <ul class="flex-row-skills skill-tags">
+                <li><a href="#">Bootstrap</a></li>
+                <li><a href="#">Ruby on rails</a></li>
+                <li><a href="#">RSpec</a></li>
+                <li><a href="#">Capybara</a></li>
+                <li><a href="#">Selenium</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="skill-placeholder">
+            <img src="img/Icons/skill3.png" alt="skill" />
+            <div class="title-and-tags">
+              <h3 class="dark-blue">Skills</h3>
+              <ul class="flex-row-skills skill-tags">
+                <li><a href="#">Codekit</a></li>
+                <li><a href="#">Git & GitHub</a></li>
+                <li><a href="#">Codepen</a></li>
+                <li><a href="#">Gitlab</a></li>
+                <li><a href="#">Terminal</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="contact-section" id="contact-section">
+        <h2 class="contact-description dark-blue">
+          I'm always interested in hearing about new projects, so if you'd like
+          to chat please get in touch.
+        </h2>
+        <form
+          id="form"
+          class="form"
+          action="https://formspree.io/f/mjvloqgy"
+          method="post"
+        >
+          <input
+            type="text"
+            id="fullname"
+            placeholder="Full name"
+            name="fullname"
+            maxlength="30"
+            required
+          />
+          <input
+            type="email"
+            id="email"
+            placeholder="Email address"
+            name="email"
+            required
+          />
+          <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            maxlength="500"
+            placeholder="Enter text here"
+            class="change"
+            required
+          ></textarea>
+          <img
+            src="img/contact-form-png.svg"
+            alt="just background png"
+            class="only-mobile"
+          />
+          <small id="error-message">
+            Invalid Email. Please use lowercase characters.
+          </small>
+          <button type="submit" class="form-btn">Get in touch</button>
+        </form>
+        <div class="social-media-icons">
+          <hr />
+          <ul class="flex-div">
+            <li>
+              <a href="#">
+                <img src="img/Icons/twitter.svg" alt="twitter-icone"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/Icons/LinkedinIcon.svg" alt="Linkedin-icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/Icons/medium.svg" alt="medium-icone"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/Icons/github.svg" alt="github-icone"
+              /></a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/Icons/angellist.svg" alt="angellist-icone"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <p class="only-mobile"> cilfonegabriel@gmail.com</p>
+        <img src="img/Shape.png" class="end-shape only-mobile" alt="" />
+      </section>
     </main>
-    <script src="./index.js"></script>
-  </body> 
+    <script type="module" src="popUp.js"></script>
+    <script type="module" src="app.js"></script>
+  </body>
 </html>
