@@ -36,6 +36,10 @@
   font-weight: bold;
   margin-top: 2px;
 }
+ 
+#close-popUp {
+color: #89c0fd;
+} 
 
 .pop-pDesk {
   display: none;
@@ -69,8 +73,8 @@
 
 .popup-image {
   margin: auto;
-  width: 275px;
-  height: 220px;
+  width: 314px;
+  height: 235px;
   background-image: url(./img/Mobile-popup-image.png);
   background-repeat: no-repeat;
 }
@@ -87,7 +91,7 @@
 }
 
 .p-btn {
-  width: 126px;
+  width: 148px;
   height: 48px;
   background: #36b37f;
   border-radius: 4px;
@@ -107,12 +111,14 @@
     position: fixed;
     top: 0;
     bottom: 0;
-    background: #ebf0ee;
     width: 100vw;
     height: 108vh;
     opacity: 0.99;
     z-index: 100;
     display: none;
+    mix-blend-mode: multiply;
+    background: c1c7d0;
+    background: #c1c7d0;
   }
 
   .popUp {
@@ -157,6 +163,7 @@
   .lateral {
     display: flex;
     flex-direction: row;
+    gap: 84px;
   }
 
   .popUp-btn {
@@ -191,4 +198,8 @@
     width: 14px;
     height: 14px;
   }
+
+  #close-popUp {
+    color: #67798E;
+    } 
 }
