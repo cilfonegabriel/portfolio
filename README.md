@@ -39,7 +39,7 @@ My personal portfolio
 
 ## Built With
 
-- Html & Css & Java Script
+- Html & Css
 
 ## Getting Started
 
